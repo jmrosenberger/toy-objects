@@ -26,9 +26,22 @@ const toys = [
         wholesalePrice: 2.50,
         listPrice: 35.00
     }
-]
+];
 
-console.log(toys)
+const sillyPutty = {
+    id: 4,
+    name: "silly putty",
+    maker: "unknown",
+    currentStock: 776,
+    minRestock: 150,
+    wholesalePrice: 0.75,
+    listPrice: 2.75
+};
+
+toys.push(sillyPutty);
+
+
+console.log(toys);
 
 for (const toy of toys) {
     console.log(toy.name)
