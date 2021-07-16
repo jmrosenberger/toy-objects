@@ -1,3 +1,6 @@
+const toyToFind = 2;
+
+
 const toys = [
     {
         id: 1,
@@ -70,16 +73,20 @@ toys.push(slingShot);
 
 
 for (const toy of toys) {
+    
+    if (toy.id === toyToFind) {
 
-    toy.wholesalePrice = toy.wholesalePrice + toy.wholesalePrice.toFixed(2) * 0.05;
-
-    toy.listPrice = toy.listPrice + toy.listPrice.toFixed(2) * 0.05;
-
-    const profitMargin = (toy.listPrice - toy.wholesalePrice).toFixed(2);
-
-    console.log(`The ${toy.name} costs $${toy.wholesalePrice} wholesale, with a list 
-price of $${toy.listPrice} which equals a profit of $${profitMargin} 
-per unit.
-`)
+        
+        toy.wholesalePrice = toy.wholesalePrice + toy.wholesalePrice.toFixed(2) * 0.05;
+        
+        toy.listPrice = toy.listPrice + toy.listPrice.toFixed(2) * 0.05;
+        
+        const profitMargin = (toy.listPrice - toy.wholesalePrice).toFixed(2);
+        
+        console.log(`The ${toy.name} costs $${toy.wholesalePrice} wholesale, with a list 
+        price of $${toy.listPrice} which equals a profit of $${profitMargin} 
+        per unit.
+        `)
+    }
 }
 
