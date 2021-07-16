@@ -48,7 +48,9 @@ const slingShot = {
     listPrice: 5.50
 };
 
+
 toys.push(yoyo);
+
 toys.push(slingShot);
 
 
@@ -56,7 +58,21 @@ toys.push(slingShot);
 
 console.log(toys);
 
+
+
 for (const toy of toys) {
+
     console.log(toy.name)
+};
+
+
+for (const toy of toys) {
+
+    const profitMargin = toy.listPrice - toy.wholesalePrice;
+
+    console.log(`The ${toy.name} costs $${toy.wholesalePrice} wholesale, with a list 
+price of $${toy.listPrice} which equals a profit of $${profitMargin} 
+per unit.
+`)
 }
 
