@@ -28,17 +28,30 @@ const toys = [
     }
 ];
 
-const sillyPutty = {
+const yoyo = {
     id: 4,
-    name: "silly putty",
+    name: "yoyo",
     maker: "unknown",
-    currentStock: 776,
-    minRestock: 150,
-    wholesalePrice: 0.75,
-    listPrice: 2.75
+    currentStock: 355,
+    minRestock: 50,
+    wholesalePrice: 1.00,
+    listPrice: 3.00
 };
 
-toys.push(sillyPutty);
+const slingShot = {
+    id: 5,
+    name: "sling shot",
+    maker: "unknown",
+    currentStock: 35,
+    minRestock: 25,
+    wholesalePrice: 1.25,
+    listPrice: 5.50
+};
+
+toys.push(yoyo);
+toys.push(slingShot);
+
+
 
 
 console.log(toys);
