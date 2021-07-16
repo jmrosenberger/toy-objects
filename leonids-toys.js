@@ -55,20 +55,27 @@ toys.push(slingShot);
 
 
 
+//     ------ Commented out to reduce output in terminal
+//            without losing prior work completed ------
 
-console.log(toys);
+// console.log(toys);
+
+
+
+// for (const toy of toys) {
+
+//     console.log(toy.name)
+// };
 
 
 
 for (const toy of toys) {
 
-    console.log(toy.name)
-};
+    toy.wholesalePrice = toy.wholesalePrice + toy.wholesalePrice.toFixed(2) * 0.05;
 
+    toy.listPrice = toy.listPrice + toy.listPrice.toFixed(2) * 0.05;
 
-for (const toy of toys) {
-
-    const profitMargin = toy.listPrice - toy.wholesalePrice;
+    const profitMargin = (toy.listPrice - toy.wholesalePrice).toFixed(2);
 
     console.log(`The ${toy.name} costs $${toy.wholesalePrice} wholesale, with a list 
 price of $${toy.listPrice} which equals a profit of $${profitMargin} 
