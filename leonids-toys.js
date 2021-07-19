@@ -55,6 +55,28 @@ toys.push(slingShot);
 
 
 
+const addToyToInventory = (toyObject) => {
+    const lastIndex = toys.length - 1
+    const currentLastToy = toys[lastIndex]
+    const maxId = currentLastPhone.id
+    const idForNewToy = maxId + 1
+
+    toyObject.id = idForNewToy
+    toys.push(toyObject)
+}
+
+const babyRattle = {
+    name: "baby rattle",
+    maker: "toymaker",
+    currentStock: 55,
+    minRestock: 15,
+    wholesalePrice: 1.00,
+    listPrice: 3.00
+}
+
+addToyToInventory(babyRattle)
+
+
 //     ------ Commented out to reduce output in terminal
 //            without losing prior work completed ------
 
