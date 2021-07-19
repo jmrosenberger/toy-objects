@@ -1,4 +1,4 @@
-const toyToFind = 2;
+const toyToFind = 5;
 
 
 const toys = [
@@ -61,7 +61,7 @@ toys.push(slingShot);
 const addToyToInventory = (toyObject) => {
     const lastIndex = toys.length - 1
     const currentLastToy = toys[lastIndex]
-    const maxId = currentLastPhone.id
+    const maxId = currentLastToy.id
     const idForNewToy = maxId + 1
 
     toyObject.id = idForNewToy
@@ -83,14 +83,14 @@ addToyToInventory(babyRattle)
 //     ------ Commented out to reduce output in terminal
 //            without losing prior work completed ------
 
-// console.log(toys);
+console.log(toys);
 
 
 
-// for (const toy of toys) {
+for (const toy of toys) {
 
-//     console.log(toy.name)
-// };
+    console.log(toy.name)
+};
 
 
 
